@@ -16,7 +16,7 @@ npm install socsjs --save
 var socsjs = require('socsjs');
 ```
 ### Finding a course
-```
+```javascript
 var quarter = 'FA16';
 var query = 'CSE105';
 var timeout = 5000;
@@ -28,7 +28,7 @@ socsjs.findCourse(quarter, query, timeout).then(function(result) {
 });
 ```
 ### Finding courses
-```
+```javascript
 var quarter = 'FA16';
 var queries = ['cse11', 'cse12', 'WCWP10A'];
 var timeout = 5000;
@@ -39,7 +39,7 @@ socsjs.findCourses(quarter, queries, timeout).then(function(result) {
 });
 ```
 ### Searching a department
-```
+```javascript
 var quarter = 'FA16';
 var dept = 'ANTH';
 var timeout = 10000;
@@ -55,7 +55,7 @@ A `Course` object has a String `name` and an array `sections`.
 `sections` is made up of `CourseElements`
 ### `CourseElement`
 A `CourseElement` contains information about a `Course`.
-```
+```javascript
 var CourseElement = function(type, id, section, days, time, location, teacher, openSeats, seatLimit) {
     this.type = type;           // String describing a course element (eg. 'final', 'discussion')
     this.sectionID = id;        // Null or String of the section's ID (eg. '123456')
@@ -74,6 +74,7 @@ var CourseElement = function(type, id, section, days, time, location, teacher, o
 ```
 
 ## TODOs
+- Add support for other Meeting Types
 - Add filters to get information easily
 - Fix error handling
 - Set default timeout value
