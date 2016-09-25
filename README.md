@@ -99,8 +99,8 @@ These are the mappings to the different meeting types
 
 
 ## TODOs
-- Add support for other Meeting Types
-- Add filters to get information easily
-- Fix error handling
-- Set default timeout value
-- Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
+- [x] Add support for other Meeting Types
+- [ ] Add filters to get information easily
+- [ ] Fix error handling
+- [ ] Set default timeout value
+- [ ] Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
