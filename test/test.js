@@ -3,13 +3,13 @@ var socsjs = require('../lib/schedule.js');
 var quarter = 'FA16';
 var query = 'CSE105';
 var timeout = 10000;
+
 socsjs.findCourse(quarter, query, timeout).then(function(result) {
     console.log(result);    // returns a Course
     console.log(result.sections[0].isEnrollable);   // true
 }).catch(function(err) {
     console.log(err, 'oops!');
 });
-
 
 
 var queries = ['cse11', 'cse12', 'WCWP10A'];

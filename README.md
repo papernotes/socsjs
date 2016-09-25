@@ -70,8 +70,33 @@ var CourseElement = function(type, id, section, days, time, location, teacher, o
     this.waitlistSize = 0;      // Null or Number of people on the waitlist
     this.isEnrollable = false;  // Boolean for if a class element is enrollable
 }
-
 ```
+## Types
+These are the mappings to the different meeting types  
+
+| Code  | Description | socjs Type (string) |
+|:----------:|:-------------:|:--------:|
+|```DI```|Discussion|```discussion```|
+|```LE```|Lecture|```lecture```|
+|```LA```|Laboratory|```lab```|
+|```SE```|Seminar|```seminar```|
+|```ST```|Studio|```studio```|
+|```IN```|Independent Study|```independentStudy```|
+|```MI```|Midterm|```midterm```|
+|```AC```|Activity|```activity```|
+|```CL```|Clinical Clerkship|```clinicalClerkship```|
+|```CO```|Conference|```conference```|
+|```FI```|Final Exam|```finalExam```|
+|```FM```|Film|```film```|
+|```FW```|Fieldwork|```fieldwork```|
+|```IT```|Internship|```internship```|
+|```MU```|Make-up Session|```makeup```|
+|```OT```|Other Additional Meeting|```otherMeeting```|
+|```PB```|Problem Session|```problemSession```|
+|```PR```|Practicum|```practicum```|
+|```RE```|Review Session|```reviewSession```|
+|```TU```|Tutorial|```tutorial```|
+
 
 ## TODOs
 - Add support for other Meeting Types
