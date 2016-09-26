@@ -63,7 +63,7 @@ var CourseElement = function(type, id, section, days, time, location, teacher, o
     this.days = days;           // String of the days (eg. 'MWF')
     this.time = time;           // String of the time as shown on the Schedule of Classes site
     this.location = location;   // String of the location
-    this.teacher = teacher;     // Null or String of LastName,FirstName of teacher
+    this.teacher = formatProf(teacher);     // Null or String of LastName, FirstName of teacher
     this.openSeats = openSeats; // Null or Number of how many seats are available
     this.seatLimit = seatLimit; // Null or Number of the course element's class limit
 
