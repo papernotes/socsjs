@@ -21,7 +21,7 @@ socsjs.findCourses(quarter, queries, timeout).then(function(result) {
 
 
 var dept = 'ANTH';
-socsjs.searchDepartment(quarter, dept, timeout).then(function(result) {
+socsjs.searchDepartment(quarter, dept, timeout, true).then(function(result) {
     console.log(result);    // returns an array of Courses
 }).catch(function(err) {
     console.log(err, 'oops!');

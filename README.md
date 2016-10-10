@@ -43,8 +43,9 @@ socsjs.findCourses(quarter, queries, timeout).then(function(result) {
 var quarter = 'FA16';
 var dept = 'ANTH';
 var timeout = 10000;
-socsjs.searchDepartment(quarter, dept, timeout).then(function(result) {
-    console.log(result);    // returns an array of Courses
+var undergrad = true;   // optional boolean to select only undergrad courses (< 200)
+socsjs.searchDepartment(quarter, dept, timeout, undergrad).then(function(result) {
+    console.log(result);    // returns an array of undergrad Courses
 }).catch(function(err) {
     console.log(err, 'oops!');
 });
@@ -101,6 +102,9 @@ These are the mappings to the different meeting types
 ## TODOs
 - [x] Add support for other Meeting Types
 - [ ] Add filters to get information easily
+- [ ] Add search by Section ID
+- [ ] Add course units
 - [ ] Fix error handling
 - [ ] Set default timeout value
 - [ ] Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
+- [ ] Include Restriction Codes
