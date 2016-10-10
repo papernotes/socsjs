@@ -1,6 +1,6 @@
 {
   "name": "socsjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "UCSD Schedule of Classes Scraper",
   "author": "Jonathan (papernotes)",
   "main": "index.js",
