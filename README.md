@@ -12,7 +12,7 @@ npm install socsjs --save
 ```
 
 ## Usage
-```
+```javascript
 var socsjs = require('socsjs');
 ```
 ### Finding a course
