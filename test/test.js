@@ -26,3 +26,10 @@ socsjs.searchDepartment(quarter, dept, timeout, true).then(function(result) {
 }).catch(function(err) {
     console.log(err, 'oops!');
 });
+
+// check default timeout
+socsjs.findCourse(quarter, query).then(function(result) {
+    console.log("Default timeout success");
+}).catch(function(err) {
+    console.log(err, 'oops!');
+});
