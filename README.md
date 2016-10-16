@@ -104,7 +104,9 @@ These are the mappings to the different meeting types
 - [ ] Add filters to get information easily
 - [ ] Add search by Section ID
 - [ ] Add course units
+- [ ] Add prereqs
+- [ ] Add Restriction codes
 - [ ] Fix error handling
 - [x] Set default timeout value
 - [ ] Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
-- [ ] Include Restriction Codes
+- [ ] Set up for ES6
