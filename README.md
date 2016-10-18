@@ -3,8 +3,8 @@
 [![npm](https://img.shields.io/npm/l/socsjs.svg?style=flat-square)](https://www.npmjs.com/package/socsjs)
 
 A scraper that simulates an API for [UCSD's Schedule of Classes](https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm)  
-Many thanks to [andrewthehan](https://github.com/andrewthehan) and [davidmrdavid](https://github.com/davidmrdavid)  
-Check out a project made with socsjs! [trendysocs.com](http://trendysocs.com/)
+Many thanks to [@andrewthehan](https://github.com/andrewthehan) and [@davidmrdavid](https://github.com/davidmrdavid)  
+Check out a [project](https://github.com/papernotes/trendy-socs) made with socsjs!
 
 ## Installation
 ```
