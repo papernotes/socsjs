@@ -108,6 +108,7 @@ These are the mappings to the different meeting types
 - [ ] Add prereqs
 - [ ] Add Restriction codes
 - [ ] Fix error handling
+- [ ] Handle nonexistant courses and quarters
 - [ ] Fix tests (verbose, type checking)
 - [x] Set default timeout value
 - [ ] Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
