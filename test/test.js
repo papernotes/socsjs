@@ -4,6 +4,20 @@ var quarter = 'FA16';
 var query = 'CSE105';
 var timeout = 10000;
 
+// Searching a single page (CSE 105)
+socsjs.findCourse('WI17', '895719', timeout, true).then(function(result) {
+  console.log(result);
+}).catch(function(err) {
+  console.log(err, 'oops!');
+});
+
+// Searching multi page (WCWP 10A)
+socsjs.findCourse('WI17', '888999', timeout, true).then(function(result) {
+  console.log(result);
+}).catch(function(err) {
+  console.log(err, 'oops!');
+});
+
 socsjs.findCourse(quarter, query, timeout).then(function(result) {
     console.log(result);    // returns a Course
     console.log(result.sections[0].isEnrollable);   // true
