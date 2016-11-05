@@ -28,6 +28,18 @@ socsjs.findCourse(quarter, query, timeout).then(function(result) {
     console.log(err, 'oops!');
 });
 ```
+### Finding a course by section id
+```javascript
+var quarter = 'WI17';
+var query = '895719';
+var timeout = 5000;
+var byId = true;
+socsjs.findCourse(quarter, query, timeout, byId).then(function(result) {
+    console.log(result);    // returns a Course
+}).catch(function(err) {
+    console.log(err, 'oops!');
+});
+```
 ### Finding courses
 ```javascript
 var quarter = 'FA16';
@@ -103,7 +115,7 @@ These are the mappings to the different meeting types
 ## TODOs
 - [x] Add support for other Meeting Types
 - [ ] Add filters to get information easily
-- [ ] Add search by Section ID
+- [ ] Add search by Section ID (currently only supports findCourse)
 - [ ] Add course units
 - [ ] Add prereqs
 - [ ] Add Restriction codes
