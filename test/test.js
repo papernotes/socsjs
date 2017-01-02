@@ -1,4 +1,4 @@
-var socsjs = require('../lib/schedule.js');
+var socsjs = require('../lib/socsjs.js');
 
 var quarter = 'FA16';
 var query = 'CSE105';
