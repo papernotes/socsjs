@@ -100,7 +100,7 @@ var CourseElement = function(type, id, section, days, time, location, teacher, o
 ## Types
 These are the mappings to the different meeting types  
 
-| Code  | Description | socjs Type (string) |
+| Code  | Description | socsjs Type (string) |
 |:----------:|:-------------:|:--------:|
 |```DI```|Discussion|```discussion```|
 |```LE```|Lecture|```lecture```|
