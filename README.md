@@ -128,11 +128,13 @@ These are the mappings to the different meeting types
 - [x] Add support for other Meeting Types
 - [ ] Add filters to get information easily
 - [x] Add search by Section ID
+- [ ] Add search by time filters
 - [ ] Add course units
 - [ ] Add prereqs
 - [ ] Add Restriction codes
 - [ ] Fix error handling
-- [ ] Handle nonexistant courses and quarters
+- [x] Handle nonexistant courses
+- [ ] Handle nonexistant quarters
 - [ ] Fix tests (verbose, type checking)
 - [x] Set default timeout value
 - [ ] Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
