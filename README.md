@@ -77,14 +77,14 @@ socsjs.searchDepartment(quarter, dept, timeout, undergrad).then(function(result)
 ```
 ## Objects
 ### `Course`
-A `Course` object has a String `name` and an array `sections`.  
+A `Course` object has Strings `department`, `code`, `name`, an array `sections`, and a number `units`.  
 `sections` is made up of `CourseElements`
 ### `CourseElement`
 A `CourseElement` contains information about a `Course`.
 ```javascript
 var CourseElement = function(type, id, section, days, time, location, teacher, openSeats, seatLimit) {
     this.type = type;           // String describing a course element (eg. 'final', 'discussion')
-    this.sectionID = id;        // Null or String of the section's ID (eg. '123456')
+    this.id = id;        // Null or String of the section's ID (eg. '123456')
     this.section = section;     // Null or String of the section  (eg. 'A01')
     this.days = days;           // String of the days (eg. 'MWF')
     this.time = time;           // String of the time as shown on the Schedule of Classes site
@@ -95,6 +95,7 @@ var CourseElement = function(type, id, section, days, time, location, teacher, o
 
     this.waitlistSize = 0;      // Null or Number of people on the waitlist
     this.isEnrollable = false;  // Boolean for if a class element is enrollable
+    this.isCancelled = false;   // Boolean for if a class is cancelled
 }
 ```
 ## Types
@@ -129,13 +130,14 @@ These are the mappings to the different meeting types
 - [ ] Add filters to get information easily
 - [x] Add search by Section ID
 - [ ] Add search by time filters
-- [ ] Add course units
+- [x] Add course units
 - [ ] Add prereqs
 - [ ] Add Restriction codes
-- [ ] Fix error handling
+- [x] Fix error handling
 - [x] Handle nonexistant courses
 - [ ] Handle nonexistant quarters
 - [ ] Fix tests (verbose, type checking)
 - [x] Set default timeout value
-- [ ] Format CourseElement fields, such as setting time to have start/end or having proper spacing for teacher names
+- [ ] Format CourseElement date and time
+- [ ] Format CourseElement location
 - [ ] Set up for ES6
