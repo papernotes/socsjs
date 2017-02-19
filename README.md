@@ -84,7 +84,7 @@ A `CourseElement` contains information about a `Course`.
 ```javascript
 var CourseElement = function(type, id, section, days, time, location, teacher, openSeats, seatLimit) {
     this.type = type;           // String describing a course element (eg. 'final', 'discussion')
-    this.id = id;        // Null or String of the section's ID (eg. '123456')
+    this.id = id;               // Null or String of the section's ID (eg. '123456')
     this.section = section;     // Null or String of the section  (eg. 'A01')
     this.days = days;           // String of the days (eg. 'MWF')
     this.time = time;           // String of the time as shown on the Schedule of Classes site
@@ -133,8 +133,9 @@ These are the mappings to the different meeting types
 - [x] Add course units
 - [ ] Add prereqs
 - [ ] Add Restriction codes
-- [x] Fix error handling
-- [x] Handle nonexistant courses
+- [ ] Add getDepartments and getSubjects
+- [x] Fix error handling for no internet connection and short timeout
+- [ ] Handle nonexistant courses with error message (currently returns Course object)
 - [ ] Handle nonexistant quarters
 - [ ] Fix tests (verbose, type checking)
 - [x] Set default timeout value
