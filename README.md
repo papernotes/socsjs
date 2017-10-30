@@ -4,7 +4,12 @@
 
 A scraper that simulates an API for [UCSD's Schedule of Classes](https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm)  
 Many thanks to [@andrewthehan](https://github.com/andrewthehan) and [@davidmrdavid](https://github.com/davidmrdavid)  
-Check out a [project](https://github.com/papernotes/trendy-socs) made with socsjs!
+
+### Projects made with socsjs  
+*Feel free to send a pull request for the README if you made something with socsjs!*  
+- [Trendy Socs](https://github.com/papernotes/trendy-socs)
+- [TritonPal](https://github.com/asg017/TritonPal-Chrome-Extension)
+- [UCSD Rooms](https://github.com/joelseq/ucsd-rooms)
 
 ## Installation
 ```
